@@ -1,2 +1,29 @@
 # vet-clinic
  
+This projects uses a relational database to create the initial data structure for a vet clinic.
+
+# Getting Started
+This repository includes files with plain SQL that can be used to recreate a database:
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
+
+## Author
+
+
+| 👤 Name | Github | Twitter | LinkedIn |
+|------|--------|---------|----------|
+|Abdullah Asghar|[@Abdullah](https://github.com/Abdullah2213565)|[@Abdullah](https://twitter.com/dulakhan024)|[@AbdullahKhan](https://www.linkedin.com/in/abdullah-khan2002/)|
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](../../issues/).
+## Show your support
+Give a ⭐️ if you like this project!
+## Acknowledgments
+- Hat tip to anyone whose code was used
+- Inspiration
+
+## 📝 License
+This project is [MIT](./MIT.md) licensed.
