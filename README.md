@@ -14,7 +14,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 | 👤 Name | Github | Twitter | LinkedIn |
 |------|--------|---------|----------|
-|Robertson Akpan|[@Abdullah](https://github.com/Abdullah2213565)|[@Abdullah](https://twitter.com/dulakhan024)|[@AbdullahKhan](https://www.linkedin.com/in/abdullah-khan2002/)|
+|Abdullah Asghar|[@Abdullah](https://github.com/Abdullah2213565)|[@Abdullah](https://twitter.com/dulakhan024)|[@AbdullahKhan](https://www.linkedin.com/in/abdullah-khan2002/)|
 
 ## 🤝 Contributing
 
