@@ -23,7 +23,6 @@ ROLLBACK;
 BEGIN;
 UPDATE animals SET species = 'digimon'
 WHERE name LIKE '%mon%';
-
 UPDATE animals SET species = 'pokemon'
 WHERE species IS NULL;
 COMMIT;
@@ -39,11 +38,9 @@ BEGIN;
  DELETE FROM animals
  WHERE date_of_birth > '01-01-2022';
  SAVEPOINT SP1;
-
 UPDATE animals
 SET weight_kg = weight_kg * -1;
 ROLLBACK TO SP1;
-
 UPDATE animals
 SET weight_kg = weight_kg * -1
 WHERE weight_kg < 0;
@@ -58,24 +55,15 @@ WHERE escape_attempts = 0;
 SELECT AVG(weight_kg)
 FROM animals;
 
-SELECT 
+SELECT neutered,
   MAX(escape_attempts)
-FROM animals
-WHERE neutered = TRUE OR neutered = FALSE;
+FROM animals GROUP BY neutered;
 
-SELECT   
-  MAX(weight_kg),
-  MIN(weight_kg)
-FROM animals
-WHERE species = 'digimon';
+SELECT species,
+ MIN(weight_kg),
+ MAX(weight_kg) FROM animals GROUP BY species;
 
-SELECT   
-  MAX(weight_kg),
-  MIN(weight_kg)
-FROM animals
-WHERE species = 'pokemon';
+SELECT species,
+ AVG(escape_attempts)
+ FROM animals WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31' GROUP BY species;
 
-SELECT   
-  AVG(escape_attempts) ::numeric(10,2)
-FROM animals
-WHERE date_of_birth >= '1990-01-01' AND date_of_birth <= '2000-12-30';
